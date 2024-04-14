@@ -6,8 +6,16 @@ var logger = require("morgan");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
+var skillsDb = require("./data/skills-db");
 
 var app = express();
+
+app.get("/skills", function (req, res) {
+  res.render("skills/index", {
+    pageTitle: "Skills",
+    skills: skillsDb.getAll(),
+  });
+});
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

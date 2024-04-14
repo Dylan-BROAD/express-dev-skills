@@ -1,8 +1,36 @@
 body {
-  padding: 50px;
+  padding: 0px 275px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(38, 117, 34),
+    rgb(27, 129, 147)
+  );
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.list-group-item {
+  padding: 25px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  background-attachment: ;
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(56, 185, 50),
+    rgb(40, 201, 229)
+  );
 }
